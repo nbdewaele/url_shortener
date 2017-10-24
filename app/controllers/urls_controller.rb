@@ -27,6 +27,7 @@ class UrlsController < ApplicationController
 			redirect_to root_path
 		else
 			render :index
+		end
   end
 
   private
