@@ -11,7 +11,7 @@ class UrlsController < ApplicationController
   # GET /urls/1
   # GET /urls/1.json
   def show
-		@url = Url.find_byshort_url([params[:id]])
+		@url = Url.find_by_short_url([params[:id]])
 		redirect_to @url.long_url
   end
 
@@ -23,7 +23,6 @@ class UrlsController < ApplicationController
 		if url.save!
 			# i should generate a short url
 			url.update!(short_url: SecureRandom.base64(5).split("=").first)
-			url.save!
 			redirect_to root_path
 		else
 			render :index
