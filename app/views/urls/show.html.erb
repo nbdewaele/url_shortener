@@ -10,5 +10,8 @@
   <%= @url.short_url %>
 </p>
 
+<p>
+	<%= link_to "/url/#{url.short_url}", url_path(url.short_url) %>
+</p>
 <%= link_to 'Edit', edit_url_path(@url) %> |
 <%= link_to 'Back', urls_path %>

@@ -1,2 +1,9 @@
-<h1>Urls#show</h1>
-<p>Find me in app/views/urls/show.html.erb</p>
+<h1>Urls#index</h1>
+<p>Find me in app/views/urls/index.html.erb</p>
+
+<%= render 'form'%>
+
+<% @urls.each do |url| %>
+  <%= link_to "/url/#{url.short_url}", "/urls/#{url.short_url}" %>
+  <hr>
+<% end %>
