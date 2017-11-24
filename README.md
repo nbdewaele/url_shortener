@@ -1,26 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails version: 5.1.4
 
-Things you may want to cover:
+This a simple url shortener app.  It ain't pretty but it works.
 
-* Ruby version
+Run locally: `rails s` in terminal
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+The app is live on heroku.  Visit the below link
 ![https://protected-wave-83456.herokuapp.com/](https://protected-wave-83456.herokuapp.com/)
